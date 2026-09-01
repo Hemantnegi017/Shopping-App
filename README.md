@@ -1,16 +1,100 @@
-# React + Vite
+# 🛍️ Shopping App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Shopping Cart application built using **React**, **Redux Toolkit**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🛒 Add products to the cart
+* ❌ Remove products from the cart
+* 🔢 Display cart item count
+* 💰 Calculate the total cart amount
+* 📱 Responsive design for mobile and desktop
+* 🔔 Notifications using React Hot Toast
+* 📦 Fetch products from Fake Store API
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* Redux Toolkit
+* React Redux
+* React Router DOM
+* Tailwind CSS
+* React Icons
+* React Hot Toast
+* Fake Store API
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+ShoppingApp/
+│
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Product.jsx
+│   │   ├── CartItem.jsx
+│   │   └── Spinner.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── Cart.jsx
+│   │
+│   ├── redux/
+│   │   ├── Store.jsx
+│   │   └── Slices/
+│   │       └── CartSlice.jsx
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── README.md
+```
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Go to the project folder:
+
+```bash
+cd ShoppingApp
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## 🌐 API Used
+
+This project uses the Fake Store API to fetch product data.
+
+API:
+
+https://fakestoreapi.com/products
+
+## 📸 Screenshots
+
+You can add screenshots of your Shopping App here.
+
+## 👨‍💻 Author
+
+**Hemant Negi**
+
+## ⭐ Support
+
+If you like this project, please give it a ⭐ on GitHub!
