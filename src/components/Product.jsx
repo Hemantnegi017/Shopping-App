@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { add,remove } from "../redux/Slices/CartSlice";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const Product = ({post}) => {
 
@@ -22,17 +23,23 @@ const Product = ({post}) => {
     <div className="flex flex-col items-center justify-between
     hover:scale-110 transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded-xl outline w-full max-w-[250px] min-h-[400px]
     ">
-      <div className="text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1">
-        <p>{post.title}</p>
-      </div>
-      <div>
-        <p className="w-40 text-gray-400 font-normal text-[10px] text-left">{post.description.split(" ").slice(0,10).join(" ") + "..."}</p>
-      </div>
+        <Link to={`/product/${post.id}`}>
+          
+          <div className="text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1"> 
+            <p>{post.title}</p> 
+          </div> 
 
+          <div> 
+            <p className="w-40 text-gray-400 font-normal text-[10px] text-left">
+              {post.description.split(" ").slice(0,10).join(" ") + "..."}
+            </p> 
+          </div> 
 
-      <div className="h-[180px]">
-        <img src={post.image} className="w-full h-full " />
-      </div>
+          <div className="h-[180px]"> 
+            <img src={post.image} className="w-full h-full" /> 
+          </div>
+
+        </Link>
 
 
 
